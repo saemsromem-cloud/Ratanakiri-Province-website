@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-    <url>
-        <loc>https://ratanakiri-province.vercel.app/</loc>
-    </url>
-
+  <url>
+    <loc>https://ratanakiri-province-website.vercel.app/</loc>
+  </url>
+  <url>
+    <loc>https://ratanakiri-province-website.vercel.app/pages/places.html</loc>
+  </url>
+  <!-- ធ្វើដូចគ្នាសម្រាប់គ្រប់ឯកសារក្នុង folder pages -->
 </urlset>
