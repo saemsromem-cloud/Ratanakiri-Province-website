@@ -1,0 +1,73 @@
+﻿body[data-theme="dark"] {
+  --forest-950: #ecf4ec;
+  --forest-800: #d4e8dc;
+  --forest-700: #b7d9c6;
+  --leaf-600: #95c18f;
+  --leaf-500: #b3d4a5;
+  --lake-600: #86d0ce;
+  --lake-400: #a1dfd7;
+  --sand-50: #101d19;
+  --sand-100: #1b3028;
+  --warm-100: #172821;
+  --ink-900: #edf4ef;
+  --ink-600: #c7d5cc;
+  --line: rgba(195, 218, 203, 0.16);
+  --red-700: #e18e6b;
+  --shadow-soft: 0 22px 48px -26px rgba(0,0,0,0.72);
+  --shadow-card: 0 10px 28px -20px rgba(0,0,0,0.7);
+}
+
+body {
+  background: var(--sand-50);
+  color: var(--ink-900);
+}
+body[data-theme="dark"] .site-header,
+body[data-theme="dark"] .listing-card,
+body[data-theme="dark"] .feature-card,
+body[data-theme="dark"] .info-card,
+body[data-theme="dark"] .card,
+body[data-theme="dark"] .food-card,
+body[data-theme="dark"] .search-shell,
+body[data-theme="dark"] .alert-banner,
+body[data-theme="dark"] .search-results {
+  background: rgba(16, 29, 25, 0.94);
+  border-color: var(--line);
+}
+body[data-theme="dark"] .site-footer { background: #091510; }
+body[data-theme="dark"] .band-dark,
+body[data-theme="dark"] .cta-band { background: #0a1511; }
+body[data-theme="dark"] .btn-primary,
+body[data-theme="dark"] .btn-primary:hover,
+body[data-theme="dark"] .lang-btn.active,
+body[data-theme="dark"] .filter-pill.active,
+body[data-theme="dark"] .btn-outline:hover,
+body[data-theme="dark"] .btn-dark-outline:hover,
+body[data-theme="dark"] .favorite-toggle.active { color: #10241b; }
+body[data-theme="dark"] .btn-primary { background: #a9cb98; }
+body[data-theme="dark"] .btn-primary:hover { background: #c2ddb3; }
+body[data-theme="dark"] .lang-btn.active,
+body[data-theme="dark"] .filter-pill.active { background: #d5e6d6; border-color: #d5e6d6; }
+body[data-theme="dark"] .btn-outline:hover,
+body[data-theme="dark"] .btn-dark-outline:hover { background: var(--lake-400); }
+body[data-theme="dark"] .favorite-toggle.active { background: #e5a17d; border-color: #e5a17d; }
+body[data-theme="dark"] .card-tag { color: #173a32; }
+body[data-theme="dark"] .lang-btn,
+body[data-theme="dark"] .theme-toggle,
+body[data-theme="dark"] .menu-toggle,
+body[data-theme="dark"] .nav-links a,
+body[data-theme="dark"] .brand,
+body[data-theme="dark"] .listing-card h3,
+body[data-theme="dark"] .info-card h3,
+body[data-theme="dark"] .feature-card h3,
+body[data-theme="dark"] .alert-banner h2,
+body[data-theme="dark"] .section-heading h2,
+body[data-theme="dark"] .split-copy h2,
+body[data-theme="dark"] .listing-card p,
+body[data-theme="dark"] .feature-card p,
+body[data-theme="dark"] .info-card p,
+body[data-theme="dark"] .hero h1,
+body[data-theme="dark"] .hero p,
+body[data-theme="dark"] .search-results a,
+body[data-theme="dark"] .search-results p {
+  color: var(--ink-900);
+}

@@ -1,0 +1,329 @@
+﻿<!DOCTYPE html>
+<html lang="km">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discover Ratanakiri | Nature, Culture & Places</title>
+  <meta name="description"
+    content="Discover Ratanakiri's lakes, waterfalls, forests, indigenous cultures, traditions and local food." />
+  <meta property="og:title" content="Discover Ratanakiri" />
+  <meta property="og:description" content="Explore the nature, cultures, traditions and food of Ratanakiri Province." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/yeaklaom.png" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/theme.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body data-page="home" data-theme="light">
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="index.html" class="brand" aria-label="Ratanakiri home"><img src="images/logo.png" alt=""
+          aria-hidden="true" /></a>
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html" aria-current="page" data-en="Home" data-km="ទំព័រដើម">ទំព័រដើម</a>
+        <a href="pages/places.html" data-en="Places" data-km="កន្លែងកម្សាន្ត">កន្លែងកម្សាន្ត</a>
+        <a href="pages/culture.html" data-en="Culture" data-km="វប្បធម៌">វប្បធម៌</a>
+        <a href="pages/food.html" data-en="Food" data-km="ម្ហូបអាហារ">ម្ហូបអាហារ</a>
+        <a href="pages/gallery.html" data-en="Gallery" data-km="វិចិត្រសាល">វិចិត្រសាល</a>
+        <a href="pages/map.html" data-en="Map & Tips" data-km="ផែនទី និងគន្លឹះ">ផែនទី និងគន្លឹះ</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="language-switch" role="group" aria-label="Language switch">
+          <button type="button" class="lang-btn" data-lang="km">ខ្មែរ</button>
+          <button type="button" class="lang-btn" data-lang="en">English</button>
+        </div>
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"><i
+            class="fa-solid fa-moon"></i></button>
+        <button type="button" class="menu-toggle" aria-label="Open main menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-media">
+        <img src="images/yeaklaom.png" alt="Aerial view of the forest-ringed Yeak Laom crater lake" fetchpriority="high"
+          decoding="async" />
+      </div>
+      <div class="container hero-content">
+        <p class="eyebrow">RATANAKIRI • CAMBODIA</p>
+        <h1 data-en="Discover Ratanakiri's nature and living cultures"
+          data-km="ស្វែងយល់ពីធម្មជាតិ និងវប្បធម៌រស់រវើកនៅរតនគិរី">ស្វែងយល់ពីធម្មជាតិ និងវប្បធម៌រស់រវើកនៅរតនគិរី</h1>
+        <p class="lede"
+          data-en="Find waterfalls, crater lakes and forest landscapes, and learn about the Indigenous communities who call this northeastern Cambodian province home."
+          data-km="ស្វែងរកទឹកជ្រោះ បឹងភ្នំភ្លើង និងទេសភាពព្រៃភ្នំ ព្រមទាំងស្វែងយល់ពីសហគមន៍ជនជាតិដើមដែលរស់នៅក្នុងខេត្តភាគឦសាននៃប្រទេសកម្ពុជានេះ។">
+          ស្វែងរកទឹកជ្រោះ បឹងភ្នំភ្លើង និងទេសភាពព្រៃភ្នំ
+          ព្រមទាំងស្វែងយល់ពីសហគមន៍ជនជាតិដើមដែលរស់នៅក្នុងខេត្តភាគឦសាននៃប្រទេសកម្ពុជានេះ។</p>
+        <div class="search-shell">
+          <input type="search" id="siteSearchInput" aria-label="Search Ratanakiri places and culture"
+            placeholder="ស្វែងរកទីកន្លែង ឬវប្បធម៌..." data-placeholder-en="Search places or culture..."
+            data-placeholder-km="ស្វែងរកទីកន្លែង ឬវប្បធម៌..." />
+          <button type="button" class="btn btn-primary" id="globalSearchButton" data-en="Search"
+            data-km="ស្វែងរក">ស្វែងរក</button>
+          <button type="button" class="text-button" id="clearSearchButton" data-en="Clear"
+            data-km="សម្អាត">សម្អាត</button>
+        </div>
+        <div id="searchResults" class="search-results" aria-live="polite"></div>
+        <div class="hero-actions">
+          <a href="pages/places.html" class="btn btn-primary" data-en="Explore Places"
+            data-km="ស្វែងរកកន្លែងកម្សាន្ត">ស្វែងរកកន្លែងកម្សាន្ត</a>
+          <a href="pages/culture.html" class="btn btn-secondary" data-en="Discover Culture"
+            data-km="ស្វែងយល់ពីវប្បធម៌">ស្វែងយល់ពីវប្បធម៌</a>
+        </div>
+      </div>
+    </section>
+    <section class="quick-access">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag" data-en="Discover" data-km="ស្វែងយល់">ស្វែងយល់</span>
+          <h2 data-en="Explore Ratanakiri" data-km="ស្វែងយល់ពីរតនគិរី">ស្វែងយល់ពីរតនគិរី</h2>
+        </div>
+        <div class="quick-grid">
+          <a class="feature-card" href="pages/places.html">
+            <div class="icon-wrap"><i class="fa-solid fa-mountain-sun"></i></div>
+            <h3 data-en="Nature & Places" data-km="ធម្មជាតិ និងកន្លែងកម្សាន្ត">ធម្មជាតិ និងកន្លែងកម្សាន្ត</h3>
+            <p data-en="Waterfalls, lakes, forests and mountain landscapes."
+              data-km="ទឹកជ្រោះ បឹង ព្រៃឈើ និងទេសភាពភ្នំ។">ទឹកជ្រោះ បឹង ព្រៃឈើ និងទេសភាពភ្នំ។</p>
+          </a>
+          <a class="feature-card" href="pages/culture.html">
+            <div class="icon-wrap"><i class="fa-solid fa-drum"></i></div>
+            <h3 data-en="Culture & Traditions" data-km="វប្បធម៌ និងប្រពៃណី">វប្បធម៌ និងប្រពៃណី</h3>
+            <p data-en="Music, dance, festivals, houses and handicrafts."
+              data-km="តន្ត្រី របាំ ពិធីបុណ្យ ផ្ទះ និងសិប្បកម្ម។">តន្ត្រី របាំ ពិធីបុណ្យ ផ្ទះ និងសិប្បកម្ម។</p>
+          </a>
+          <a class="feature-card" href="pages/culture.html">
+            <div class="icon-wrap"><i class="fa-solid fa-people-group"></i></div>
+            <h3 data-en="Indigenous Communities" data-km="សហគមន៍ជនជាតិដើមភាគតិច">សហគមន៍ជនជាតិដើមភាគតិច</h3>
+            <p data-en="Learn about diverse communities and living heritage."
+              data-km="ស្វែងយល់ពីសហគមន៍ចម្រុះ និងមរតកវប្បធម៌ដែលនៅរស់រវើក។">ស្វែងយល់ពីសហគមន៍ចម្រុះ
+              និងមរតកវប្បធម៌ដែលនៅរស់រវើក។</p>
+          </a>
+          <a class="feature-card" href="pages/food.html">
+            <div class="icon-wrap"><i class="fa-solid fa-bowl-food"></i></div>
+            <h3 data-en="Food & Local Products" data-km="ម្ហូបអាហារ និងផលិតផលក្នុងតំបន់">ម្ហូបអាហារ និងផលិតផលក្នុងតំបន់
+            </h3>
+            <p data-en="Local ingredients, fruit, cashew, coffee and cooking."
+              data-km="គ្រឿងផ្សំ ផ្លែឈើ គ្រាប់ស្វាយចន្ទី កាហ្វេ និងការចម្អិនម្ហូបក្នុងតំបន់។">គ្រឿងផ្សំ ផ្លែឈើ
+              គ្រាប់ស្វាយចន្ទី កាហ្វេ និងការចម្អិនម្ហូបក្នុងតំបន់។</p>
+          </a>
+          <a class="feature-card" href="pages/gallery.html">
+            <div class="icon-wrap"><i class="fa-solid fa-images"></i></div>
+            <h3 data-en="Photo Gallery" data-km="វិចិត្រសាលរូបភាព">វិចិត្រសាលរូបភាព</h3>
+            <p data-en="Real photographs from Ratanakiri Province." data-km="រូបថតពិតពីខេត្តរតនគិរី។">
+              រូបថតពិតពីខេត្តរតនគិរី។</p>
+          </a>
+          <a class="feature-card" href="pages/map.html#tips">
+            <div class="icon-wrap"><i class="fa-solid fa-route"></i></div>
+            <h3 data-en="Map & Travel Tips" data-km="ផែនទី និងគន្លឹះធ្វើដំណើរ">ផែនទី និងគន្លឹះធ្វើដំណើរ</h3>
+            <p data-en="Find key places and plan a respectful visit."
+              data-km="ស្វែងរកទីកន្លែងសំខាន់ៗ និងរៀបចំដំណើរដោយការគោរព។">ស្វែងរកទីកន្លែងសំខាន់ៗ និងរៀបចំដំណើរដោយការគោរព។
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="section-alt">
+      <div class="container split-layout">
+        <div class="split-media">
+          <img src="images/culture.png"
+            alt="Raised houses with patterned walls in a Ratanakiri photo; community not identified" loading="lazy"
+            decoding="async" />
+        </div>
+        <div class="split-copy">
+          <span class="section-tag" data-en="Living Heritage" data-km="មរតកដែលនៅរស់រវើក">មរតកដែលនៅរស់រវើក</span>
+          <h2 data-en="Nature and culture shape Ratanakiri" data-km="ធម្មជាតិ និងវប្បធម៌ជាអត្តសញ្ញាណរតនគិរី">ធម្មជាតិ
+            និងវប្បធម៌ជាអត្តសញ្ញាណរតនគិរី</h2>
+          <p data-en="Ratanakiri's forests, highland landscapes and diverse Indigenous communities are part of a living province. Discover with curiosity, listen to local voices and respect community guidance."
+            data-km="ព្រៃឈើ ទេសភាពខ្ពង់រាប និងសហគមន៍ជនជាតិដើមចម្រុះ គឺជាផ្នែកនៃជីវិតរតនគិរី។ សូមស្វែងយល់ដោយចិត្តចង់ដឹង ស្តាប់សំឡេងអ្នកក្នុងតំបន់ និងគោរពការណែនាំរបស់សហគមន៍។">
+            ព្រៃឈើ ទេសភាពខ្ពង់រាប និងសហគមន៍ជនជាតិដើមចម្រុះ គឺជាផ្នែកនៃជីវិតរតនគិរី។ សូមស្វែងយល់ដោយចិត្តចង់ដឹង
+            ស្តាប់សំឡេងអ្នកក្នុងតំបន់ និងគោរពការណែនាំរបស់សហគមន៍។</p>
+          <ul class="checklist">
+            <li data-en="Waterfalls, lakes and forests" data-km="ទឹកជ្រោះ បឹង និងព្រៃឈើ">ទឹកជ្រោះ បឹង និងព្រៃឈើ</li>
+            <li data-en="Indigenous cultures and traditions" data-km="វប្បធម៌ និងប្រពៃណីជនជាតិដើមភាគតិច">វប្បធម៌
+              និងប្រពៃណីជនជាតិដើមភាគតិច</li>
+            <li data-en="Local food and traditional products" data-km="ម្ហូបអាហារ និងផលិតផលប្រពៃណីក្នុងតំបន់">ម្ហូបអាហារ
+              និងផលិតផលប្រពៃណីក្នុងតំបន់</li>
+            <li data-en="Responsible travel and cultural respect"
+              data-km="ទេសចរណ៍ប្រកបដោយការទទួលខុសត្រូវ និងការគោរពវប្បធម៌">ទេសចរណ៍ប្រកបដោយការទទួលខុសត្រូវ
+              និងការគោរពវប្បធម៌</li>
+          </ul>
+          <a href="pages/culture.html" class="text-link" data-en="Meet the communities"
+            data-km="ស្វែងយល់ពីសហគមន៍">ស្វែងយល់ពីសហគមន៍</a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container feature-row">
+        <div class="feature-media">
+          <img src="images/dance-culture.png"
+            alt="Dance performance in a forest setting; the community is not identified" loading="lazy"
+            decoding="async" />
+        </div>
+        <div>
+          <span class="section-tag" data-en="Living cultures" data-km="វប្បធម៌រស់រវើក">វប្បធម៌រស់រវើក</span>
+          <h2 data-en="Many communities, many stories" data-km="សហគមន៍ចម្រុះ និងរឿងរ៉ាវជាច្រើន">សហគមន៍ចម្រុះ
+            និងរឿងរ៉ាវជាច្រើន</h2>
+          <p data-en="Kreung, Tampuan, Jarai, Brao and Kavet communities are among the people of Ratanakiri. Each has its own histories and identities; traditions and daily life vary between families and villages."
+            data-km="សហគមន៍គ្រឹង ទំពួន ចារ៉ាយ ប្រៅ និងកាវែត គឺជាផ្នែកមួយនៃប្រជាជននៅរតនគិរី។ សហគមន៍នីមួយៗមានប្រវត្តិ និងអត្តសញ្ញាណផ្ទាល់ខ្លួន ហើយប្រពៃណី និងជីវិតប្រចាំថ្ងៃខុសៗគ្នាតាមគ្រួសារ និងភូមិ។">
+            សហគមន៍គ្រឹង ទំពួន ចារ៉ាយ ប្រៅ និងកាវែត គឺជាផ្នែកមួយនៃប្រជាជននៅរតនគិរី។ សហគមន៍នីមួយៗមានប្រវត្តិ
+            និងអត្តសញ្ញាណផ្ទាល់ខ្លួន ហើយប្រពៃណី និងជីវិតប្រចាំថ្ងៃខុសៗគ្នាតាមគ្រួសារ និងភូមិ។</p>
+          <p data-en="Learn from community voices and local guides. A photograph is not a substitute for asking permission or listening to the people pictured."
+            data-km="ស្វែងយល់តាមរយៈសំឡេងសហគមន៍ និងមគ្គុទ្ទេសក៍ក្នុងតំបន់។ រូបថតមិនអាចជំនួសការសុំការអនុញ្ញាត ឬការស្តាប់អ្នកដែលមានក្នុងរូបបានទេ។">
+            ស្វែងយល់តាមរយៈសំឡេងសហគមន៍ និងមគ្គុទ្ទេសក៍ក្នុងតំបន់។ រូបថតមិនអាចជំនួសការសុំការអនុញ្ញាត
+            ឬការស្តាប់អ្នកដែលមានក្នុងរូបបានទេ។</p>
+          <a href="pages/culture.html" class="text-link" data-en="Meet the communities"
+            data-km="ស្វែងយល់ពីសហគមន៍">ស្វែងយល់ពីសហគមន៍</a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag" data-en="Natural highlights"
+            data-km="តំបន់ធម្មជាតិគួរឱ្យចាប់អារម្មណ៍">តំបន់ធម្មជាតិគួរឱ្យចាប់អារម្មណ៍</span>
+          <h2 data-en="Places to explore" data-km="ទីកន្លែងសម្រាប់ស្វែងយល់">ទីកន្លែងសម្រាប់ស្វែងយល់</h2>
+        </div>
+        <div class="card-grid">
+          <article class="listing-card">
+            <div class="card-image"><img src="images/yeaklaom-lake.png"
+                alt="Yeak Laom Lake, a volcanic lake near Banlung" loading="lazy" decoding="async" /></div>
+            <div class="card-body">
+              <span class="pill" data-en="Lake" data-km="បឹង">បឹង</span>
+              <h3 data-en="Yeak Laom Lake" data-km="បឹងយក្សឡោម">បឹងយក្សឡោម</h3>
+              <p data-en="A forest-ringed crater lake south of Banlung, with a walking loop and designated swimming area."
+                data-km="បឹងភ្នំភ្លើងដែលព័ទ្ធជុំវិញដោយព្រៃ នៅភាគខាងត្បូងក្រុងបានលុង មានផ្លូវដើរជុំវិញ និងតំបន់ហែលទឹកដែលបានកំណត់។">
+                បឹងភ្នំភ្លើងដែលព័ទ្ធជុំវិញដោយព្រៃ នៅភាគខាងត្បូងក្រុងបានលុង មានផ្លូវដើរជុំវិញ និងតំបន់ហែលទឹកដែលបានកំណត់។
+              </p>
+              <a href="pages/places.html" class="text-link" data-en="Explore places"
+                data-km="ស្វែងរកទីកន្លែង">ស្វែងរកទីកន្លែង</a>
+            </div>
+          </article>
+          <article class="listing-card">
+            <div class="card-image"><img src="images/kachanh-waterfall.png"
+                alt="Waterfall among green forest in Ratanakiri" loading="lazy" decoding="async" /></div>
+            <div class="card-body">
+              <span class="pill" data-en="Waterfall" data-km="ទឹកជ្រោះ">ទឹកជ្រោះ</span>
+              <h3 data-en="Kachanh Waterfall" data-km="ទឹកជ្រោះកាចាញ់">ទឹកជ្រោះកាចាញ់</h3>
+              <p data-en="A forest waterfall southeast of Banlung. Check local access and water conditions before visiting."
+                data-km="ទឹកជ្រោះក្នុងតំបន់ព្រៃនៅភាគអាគ្នេយ៍ក្រុងបានលុង។ សូមពិនិត្យស្ថានភាពផ្លូវ និងទឹកក្នុងតំបន់មុនទៅទស្សនា។">
+                ទឹកជ្រោះក្នុងតំបន់ព្រៃនៅភាគអាគ្នេយ៍ក្រុងបានលុង។ សូមពិនិត្យស្ថានភាពផ្លូវ និងទឹកក្នុងតំបន់មុនទៅទស្សនា។</p>
+              <a href="pages/places.html" class="text-link" data-en="Explore places"
+                data-km="ស្វែងរកទីកន្លែង">ស្វែងរកទីកន្លែង</a>
+            </div>
+          </article>
+          <article class="listing-card">
+            <div class="card-image"><img src="images/vireakchey2.png" alt="Forest landscape in Virachey National Park"
+                loading="lazy" decoding="async" /></div>
+            <div class="card-body">
+              <span class="pill" data-en="Protected landscape" data-km="តំបន់ធម្មជាតិការពារ">តំបន់ធម្មជាតិការពារ</span>
+              <h3 data-en="Virachey National Park" data-km="ឧទ្យានជាតិវីរៈជ័យ">ឧទ្យានជាតិវីរៈជ័យ</h3>
+              <p data-en="A large protected area of forest and highland landscapes in northeastern Cambodia. Plan remote visits with local guidance."
+                data-km="តំបន់ការពារធម្មជាតិដ៏ធំ ដែលមានព្រៃឈើ និងទេសភាពខ្ពង់រាបនៅភាគឦសានកម្ពុជា។ សូមរៀបចំដំណើរទៅតំបន់ឆ្ងាយដោយមានការណែនាំពីអ្នកក្នុងតំបន់។">
+                តំបន់ការពារធម្មជាតិដ៏ធំ ដែលមានព្រៃឈើ និងទេសភាពខ្ពង់រាបនៅភាគឦសានកម្ពុជា។
+                សូមរៀបចំដំណើរទៅតំបន់ឆ្ងាយដោយមានការណែនាំពីអ្នកក្នុងតំបន់។</p>
+              <a href="pages/map.html" class="text-link" data-en="View map" data-km="មើលផែនទី">មើលផែនទី</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag" data-en="Food & local markets" data-km="ម្ហូបអាហារ និងផ្សារក្នុងតំបន់">ម្ហូបអាហារ
+            និងផ្សារក្នុងតំបន់</span>
+          <h2 data-en="Get to know local food" data-km="ស្វែងយល់ពីម្ហូបក្នុងតំបន់">ស្វែងយល់ពីម្ហូបក្នុងតំបន់</h2>
+        </div>
+        <div class="info-grid">
+          <article class="info-card"><i class="fa-solid fa-store" aria-hidden="true"></i>
+            <h3 data-en="Visit a local market" data-km="ទស្សនាផ្សារក្នុងតំបន់">ទស្សនាផ្សារក្នុងតំបន់</h3>
+            <p data-en="Banlung market offers a way to see seasonal produce and everyday food shopping. Ask sellers before taking photographs."
+              data-km="ផ្សារបានលុងជាកន្លែងស្វែងយល់ពីផលដំណាំតាមរដូវ និងការទិញម្ហូបប្រចាំថ្ងៃ។ សូមសួរអ្នកលក់មុនថតរូប។">
+              ផ្សារបានលុងជាកន្លែងស្វែងយល់ពីផលដំណាំតាមរដូវ និងការទិញម្ហូបប្រចាំថ្ងៃ។ សូមសួរអ្នកលក់មុនថតរូប។</p><a
+              href="pages/food.html" class="text-link" data-en="Explore food"
+              data-km="ស្វែងយល់ពីម្ហូប">ស្វែងយល់ពីម្ហូប</a>
+          </article>
+          <article class="info-card"><i class="fa-solid fa-bowl-food" aria-hidden="true"></i>
+            <h3 data-en="Ask what is in season" data-km="សួរអំពីផលដំណាំតាមរដូវ">សួរអំពីផលដំណាំតាមរដូវ</h3>
+            <p data-en="What is available changes through the year. Local hosts and vendors can tell you what is fresh."
+              data-km="អ្វីដែលមានលក់អាចផ្លាស់ប្ដូរតាមរដូវ។ ម្ចាស់ផ្ទះ និងអ្នកលក់ក្នុងតំបន់អាចប្រាប់អ្នកអំពីផលិតផលស្រស់ៗ។">
+              អ្វីដែលមានលក់អាចផ្លាស់ប្ដូរតាមរដូវ។ ម្ចាស់ផ្ទះ និងអ្នកលក់ក្នុងតំបន់អាចប្រាប់អ្នកអំពីផលិតផលស្រស់ៗ។</p><a
+              href="pages/food.html" class="text-link" data-en="See food guide"
+              data-km="មើលមគ្គុទ្ទេសក៍ម្ហូប">មើលមគ្គុទ្ទេសក៍ម្ហូប</a>
+          </article>
+          <article class="info-card"><i class="fa-solid fa-people-group" aria-hidden="true"></i>
+            <h3 data-en="Learn from local hosts" data-km="ស្វែងយល់ពីម្ចាស់ផ្ទះក្នុងតំបន់">ស្វែងយល់ពីម្ចាស់ផ្ទះក្នុងតំបន់
+            </h3>
+            <p data-en="Meals and cooking traditions differ between communities and households. Follow the host's lead and ask before documenting a meal."
+              data-km="ម្ហូប និងប្រពៃណីចម្អិនខុសៗគ្នាតាមសហគមន៍ និងគ្រួសារ។ សូមធ្វើតាមការណែនាំរបស់ម្ចាស់ផ្ទះ និងសួរមុនថត ឬកត់ត្រាអំពីអាហារ។">
+              ម្ហូប និងប្រពៃណីចម្អិនខុសៗគ្នាតាមសហគមន៍ និងគ្រួសារ។ សូមធ្វើតាមការណែនាំរបស់ម្ចាស់ផ្ទះ និងសួរមុនថត
+              ឬកត់ត្រាអំពីអាហារ។</p><a href="pages/culture.html" class="text-link" data-en="Discover culture"
+              data-km="ស្វែងយល់ពីវប្បធម៌">ស្វែងយល់ពីវប្បធម៌</a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="gallery-preview-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag" data-en="From the province" data-km="រូបភាពពីខេត្ត">រូបភាពពីខេត្ត</span>
+          <h2 data-en="Ratanakiri in photographs" data-km="រតនគិរីតាមរយៈរូបភាព">រតនគិរីតាមរយៈរូបភាព</h2>
+        </div>
+        <div class="gallery-preview-grid">
+          <a href="pages/gallery.html" aria-label="View a photograph of a forest walk"><img
+              src="images/indangeners-people.png" alt="Two people walking along a forest path; location not identified"
+              loading="lazy" decoding="async" /></a>
+          <a href="pages/gallery.html" aria-label="View local highland landscape photographs"><img
+              src="images/svay-mountain.png" alt="Highland landscape in Ratanakiri" loading="lazy"
+              decoding="async" /></a>
+          <a href="pages/gallery.html" aria-label="View an aerial photograph of Yeak Laom Lake"><img
+              src="images/yeaklaom.png" alt="Aerial view of the forest-ringed Yeak Laom crater lake" loading="lazy"
+              decoding="async" /></a>
+          <a href="pages/gallery.html" aria-label="View photographs of local architecture"><img src="images/culture.png"
+              alt="Raised houses with patterned walls; community not identified" loading="lazy" decoding="async" /></a>
+        </div>
+        <a href="pages/gallery.html" class="text-link" data-en="Open the gallery"
+          data-km="បើកវិចិត្រសាល">បើកវិចិត្រសាល</a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">RATANAKIRI</a>
+        <p data-en="Discover Ratanakiri" data-km="ស្វែងយល់ពីរតនគិរី">Discover Ratanakiri</p>
+      </div>
+      <div class="footer-col">
+        <h4 data-en="Explore" data-km="ស្វែងយល់">Explore</h4>
+        <ul>
+          <li><a href="index.html" data-en="Home" data-km="ទំព័រដើម">Home</a></li>
+          <li><a href="pages/places.html" data-en="Places" data-km="កន្លែងកម្សាន្ត">Places</a></li>
+          <li><a href="pages/food.html" data-en="Food" data-km="ម្ហូបអាហារ">Food</a></li>
+          <li><a href="pages/culture.html" data-en="Culture" data-km="វប្បធម៌">Culture</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-en="Plan" data-km="រៀបចំដំណើរ">Plan</h4>
+        <ul>
+          <li><a href="pages/gallery.html" data-en="Gallery" data-km="វិចិត្រសាល">Gallery</a></li>
+          <li><a href="pages/map.html" data-en="Map & Tips" data-km="ផែនទី និងគន្លឹះ">Map &amp; Tips</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p data-en="© 2026 Ratanakiri. All rights reserved." data-km="© ២០២៦ រតនគិរី។ រក្សាសិទ្ធិគ្រប់យ៉ាង។">© 2026
+          Ratanakiri. All rights reserved.</p>
+        <div class="language-switch" role="group" aria-label="Language switch">
+          <button type="button" class="lang-btn" data-lang="km">ខ្មែរ</button>
+          <button type="button" class="lang-btn" data-lang="en">English</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/data.js?v=20261001"></script>
+  <script src="./js/script.js?v=20261001"></script>
+</body>
+
+</html>
